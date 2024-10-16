@@ -4,16 +4,16 @@ using namespace std;
 
 int main()
 {
-    int a;
-    cin >> a;
-    if (a < 1000){
+    int money;
+    cin >> money;
+    if (money < 1000){
         cout << "Rabotai bolshe" <<endl;
     }
-    if (1000 < a){
-        if (a <1000000)
+    if (money > 1000){
+        if (money <1000000)
             cout << "Molodes"<<endl;
     }
-    if(1000000 < a){
+    if(money > 1000000 ){
         cout <<"Milloener"<<endl;
     }
 }

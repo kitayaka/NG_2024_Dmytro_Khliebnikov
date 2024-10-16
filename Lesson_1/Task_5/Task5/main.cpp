@@ -4,20 +4,20 @@ using namespace std;
 
 int main() {
     int start;
-    cout << "Vedi kolihestva svezd";
+    cout << "number of stars";
     cin >> start;
 
-    for (int i = 0; i < start; i++) {
-        for (int j = 0; j < start - i - 1; j++) {
+    for (int width = 0; width < start; width++) {
+        for (int height = 0; height < start - width - 1; height++) {
             cout << " ";
         }
-        for (int j = 0; j < 2 * i + 1; j++) {
+        for (int height = 0; height < 2 * width + 1; height++) {
             cout << "*";
         }
         cout << endl;
     }
 
-    for (int i = 0; i < start - 1; i++) {
+    for (int height = 0; height < start - 1; height++) {
         cout << " ";
     }
     cout << "*" << endl;
